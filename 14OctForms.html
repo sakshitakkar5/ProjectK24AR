@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input[type="text"],input[type="password"],input[type="email"],textarea,input[type="submit"],input[type="reset"]
+        {
+
+                background-color: lightgreen;
+                color: blue;
+                padding: 15px;
+                border-radius: 7px;
+
+
+        }
+
+        input[type="submit"]:hover,input[type="reset"]:hover{
+
+            transform: scale(1.2);
+            transition: 2s;
+        }
+
+        input[type="text"]:focus{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <form action="" method="post">
+
+
+        <label for="uname">Name:</label>
+        <input type="text" id="uname" name="uname" placeholder="enter name" size="30" maxlength="3">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password">
+
+        <br><br>
+
+        <label for="feed">Enter Feedback:</label>
+        <textarea name="feed" id="feed" rows="10" cols="30">Hello</textarea>
+
+        <br><br>
+
+        <label for="hobby">Choose Hobby:</label>
+        <input type="checkbox" id="hobby" name="hobby" value="sing">Singing
+        <input type="checkbox" id="hobby" name="hobby" value="dance">Dancing
+        <input type="checkbox" id="hobby" name="hobby" value="cook">Cooking
+
+        <br><br>
+
+        <label for="course">Choose your course:</label>
+        <input type="radio" name="course" id="btech" value="btech">
+        <label for="btech">B.Tech</label>
+        <input type="radio" name="course" id="bsc" value="bsc">
+        <label for="bsc">B.Sc</label>
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">BCA</label>\
+
+        <br><br>
+
+        <label for="choosestate">Choose state:</label>
+        <select name="choosestate" id="choosestate" size="2" multiple>
+            <option value="statesel">Choose your state</option>
+            <option value="punjab">Punjab</option>
+            <option value="HP" selected>Himachal Pradesh</option>
+            <option value="kerala">Kerala</option>
+            <option value="orissa">Orissa</option>
+        </select>
+
+        <br><br>
+
+        <label for="filesel">Select File:</label>
+        <input type="file" name="filesel" id="filesel">
+
+        <br><br>
+
+        <input type="submit" name="submitbutton" id="submitbutton" value="Submit Form">
+        <input type="reset" name="resetbutton" id="resetbutton" value="Reset Form">
+
+        <input type="button" value="OK">
+        <input type="image" name="imagebutton" id="imagebutton" src="OK image.jpg" height="50" width="50">
+
+
+    </form>
+</body>
+</html>

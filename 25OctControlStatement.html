@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        document.write("<h1>if statement</h1><br>");
+        
+        var marks=60;
+        if(marks>=80){
+
+            document.write("Eligible for test");
+        }
+        else{
+
+            document.write("Not Eligible");
+        }
+
+
+        document.write("<h1>Switch statement</h1><br>");
+
+        var num1 =10;
+        var num2= 5;
+        var sym="/";
+
+        switch(sym){
+
+            case "+":
+                document.write(num1+num2);
+                break;
+            case "-":
+                document.write(num1-num2);
+                break;
+
+            case "/":
+                document.write(num1/num2);
+                break;
+
+            case "*":
+                document.write(num1*num2);
+                break;
+
+            default:
+                document.write("No case is executed");
+                break;
+
+
+
+
+        }
+
+
+
+        document.write("<h1>For loop</h1><br>");
+
+        for(var i=7; i<30; i++)
+        {
+
+            document.write(i + "<br>");
+        }
+
+        document.write("<h1>While loop</h1><br>");
+
+        var j =2;
+        while(j<=20){
+
+            j++;
+            document.write(j);
+            
+        }
+
+
+        document.write("<h1>Do While loop</h1><br>");
+
+        var k = 10;
+        do{
+
+            document.write(k);
+            k++;
+
+
+
+        }while(k<=20);
+
+
+        document.write("<h1>Continue Statement</h1><br>");
+
+
+        for(var i=7; i<30; i++)
+        {
+
+            
+            if(i==14)
+        {
+            break;
+        }
+
+        document.write(i + "<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
