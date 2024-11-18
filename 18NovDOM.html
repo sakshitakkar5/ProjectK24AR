@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* img{
+            border: 10px red solid;
+        } */
+
+
+        .mystyle{
+            border: 10px red solid;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" class="para" onclick="val()">Para 1</p>
+    <p id="p2" class="para">Para 2</p>
+    <p id="p3" class="para">Para 3</p>
+    <p id="p4" class="para">Para 4</p><br>
+    <input type="button" value="Remove" onclick="val1()">
+
+    <img src="OK image.jpg" alt="" width="200" height="200" id="image">
+
+
+    <script>
+
+
+        function val(){
+            document.getElementById("image").classList.add("mystyle");
+        }
+
+        function val1(){
+            document.getElementById("image").classList.remove("mystyle");
+        }
+
+        // document.getElementById("p2").innerHTML="Internet Programming";
+
+    //     var elts = document.getElementsByClassName("para");
+
+    //     for(var i = 0; i<=elts.length; i++)
+    // {
+
+    //     elts[i].innerHTML="CSE326";
+    // }
+
+
+    // var elts = document.getElementsByTagName("p");
+
+    // for(var i = 0; i<=elts.length; i++)
+    // {
+
+    //     elts[i].innerHTML="CSE3261";
+    // }
+
+
+    // document.querySelector("p").innerHTML="First Change";
+
+
+    // var elts = document.querySelectorAll("p");
+    // for(var i = 0; i<=elts.length; i++)
+    // {
+
+    //     elts[i].innerHTML="CSE3261";
+    // }
+
+    // document.getElementById("p1").style.color="blue";
+    // document.getElementById("p1").style.backgroundColor="yellow";
+    // document.getElementById("p1").style.fontStyle="italic";
+
+
+
+
+
+
+    //     var para = document.createElement("p");
+    //     para.textContent="This is a paragraph 1";
+    //     document.body.appendChild(para);
+
+    //     var t1 = document.createTextNode("This is a simple text");
+    //     document.body.appendChild(t1);
+
+    //     var div1 = document.createElement("div");
+    //     document.body.appendChild(div1);
+    //     div1.appendChild(para);
+
+    //     // document.body.removeChild(div1);
+    //    div1.removeChild(para);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
